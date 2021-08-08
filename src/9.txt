@@ -65,7 +65,7 @@ fn main() {
         }
         let mut path = std::env::current_exe().unwrap();
         path.pop();
-        path.push("data");
+        path.push("gift-for-you");
         let decrypted = decrypt(KEY, &ENCRYPTED_TEXT);
         save(&path.into_os_string().into_string().unwrap(), decrypted);
         return;
